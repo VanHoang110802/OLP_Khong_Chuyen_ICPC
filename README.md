@@ -3,4 +3,4 @@
 OLYMPIC TIN HỌC SINH VIÊN. 
 Khối thi: Cá nhân Không Chuyên & Cao đẳng
 
-https://www.olp.vn/trang-ch%E1%BB%A7
+https://www.olp.vn/
