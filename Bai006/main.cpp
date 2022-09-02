@@ -1,5 +1,5 @@
 /*
-Bài 2. Camera quan sát (30 điểm)
+Bài 6. Camera quan sát (30 điểm)
 Có n camera quan sát, đánh số tuần tự từ 1 đến n, được đặt lần lượt thẳng hàng trên đường cao tốc từ Tây sang Đông. Camera thứ i được đặt ở độ cao hi và hướng về một trong hai hướng: Tây hoặc Đông.
 
 Camera thứ i có thể quan sát được camera thứ j nếu camera thứ i nhìn về phía camera thứ j và không có bất kỳ camera nào ở giữa hai camera này có độ cao vượt quá độ cao của camera thứ j.
