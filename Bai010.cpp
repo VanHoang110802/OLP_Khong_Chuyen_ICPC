@@ -45,3 +45,42 @@ In the second sample, first student is the only one on the contest.
 
 In the third sample, students 2 and 5 share the first position with highest rating, student 4 is next with third position, and students 1 and 3 are the last sharing fourth position.
 */
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+ 
+int n; 
+int a[2005]; 
+vector <int> listID[2005]; 
+int result[2005]; 
+ 
+int main () 
+{
+	cin >> n; 
+	for (int i = 1; i <= n; ++i) 
+	{
+		cin >> a[i]; 
+		listID[a[i]].push_back(i); 
+	}
+	sort(a + 1, a + n + 1); 
+	int higherScore = 2005; 
+	int Rank = 0; 
+	for (int i = n; i >= 1; --i) 
+	{
+		if (higherScore != a[i]) 
+		{
+			higherScore = a[i]; 
+			Rank = n - i + 1; 
+		}  
+		int lastid = listID[a[i]].back(); 
+		listID[a[i]].pop_back(); 
+		result[lastid] = Rank;
+	}
+	for (int i = 1; i <= n; ++i) 
+	{
+		cout << result[i] << ' '; 
+	}
+	return 0; 
+}
